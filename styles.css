@@ -426,8 +426,8 @@ body {
 }
 
 .team-grid {
-    overflow: hidden;
-    width: 100%;
+    
+    width: 100vw;
     padding: 40px 0;
     position: relative;
 }
@@ -666,4 +666,5 @@ body {
     text-align: center;
     padding-top: 1rem;
     border-top: 1px solid rgb(48, 47, 47);
+
 }
