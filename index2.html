@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamAce.Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">ExamAce</div>
+            <a href="index.html" class="back-btn">← Back to Home</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Quiz Header -->
+        <div class="quiz-header">
+            <h1 class="quiz-title">Practice Test</h1>
+            <p class="quiz-subtitle">Test your knowledge with carefully curated questions</p>
+            <div class="quiz-stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="QuestionNo"></div>
+                    <div class="stat-label">Questions No</div>
+                </div>
+        
+                <div class="stat-item">
+                    <div class="stat-number" id="difficulty">Medium</div>
+                    <div class="stat-label">Difficulty</div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- question-card -->
+         <div class="questionCard" id="questionCard">
+            <div class="quiz-container">
+            <div class="questionText" id="questionText">
+                <h3 id="question"></h3>
+            </div>
+             
+             <ul class="options" id="options">
+             </ul>
+             <div class="nav-buttons">
+            <button id="submit" class="nav-btn primary">Next Question</button>
+            </div>
+            <div class="results-box" id="results-box">
+                    <h2 id="result"></h2>
+                </div>
+         </div>
+       </div>
+     </div>
+
+
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+         <div class="footer-bottom">
+            <p>&copy; 2024 ExamAce. All rights reserved. | Privacy Policy | Terms of Service | Cookie Policy</p>
+            <p>made with ❤️ by team ByteBro's </p>
+        </div>
+    </footer>
+    <script src="quiz.js"></script>
+    <script src="questionsDB.js"></script>
+</body>
+</html>
